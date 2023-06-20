@@ -1,0 +1,18 @@
+server:
+  port: 8070
+
+spring:
+  application:
+    name: omnisystem
+  datasource:
+    url: jdbc:postgresql://localhost:5432/codexist
+    username: postgres
+    password: 123456
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+        dialect: org.hibernate.dialect.PostgreSQLDialect
